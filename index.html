@@ -42,7 +42,14 @@
   .nav a.cta{background:var(--gold);color:var(--dark-green);padding:9px 18px;border-radius:2px;font-weight:600;font-size:.85rem;}
   @media(max-width:780px){.nav-links{display:none;}}
 
-  .hero{background:linear-gradient(180deg,var(--dark-green),var(--mid-green));color:var(--cream);padding:60px 24px 80px;}
+  .hero{background:
+    linear-gradient(rgba(18,53,36,0.75), rgba(18,53,36,0.75)),
+    url("1783434230570.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--cream);
+  padding: 60px 24px 80px;}
   .eyebrow{font-family:'IBM Plex Mono',monospace;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);display:flex;gap:10px;align-items:center;margin-bottom:16px;}
   .hero h1{color:var(--white);font-size:clamp(2.1rem,4.6vw,3.4rem);font-weight:600;line-height:1.1;max-width:760px;}
   .hero h1 em{font-style:italic;color:var(--gold);}
@@ -164,8 +171,14 @@
   .pay-badge{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);padding:6px 10px;border-radius:4px;font-size:.72rem;font-family:'IBM Plex Mono',monospace;color:var(--cream);}
   .foot-bottom{text-align:center;padding:20px 24px;font-size:.78rem;color:#7E9483;}
   .foot-bottom span{color:var(--gold);}
-  @media(max-width:860px){footer .foot-grid{grid-template-columns:1fr 1fr;}}
-  @media(max-width:520px){footer .foot-grid{grid-template-columns:1fr;}}
+  .occasions{background:var(--cream);}
+  .occ-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .occ-card{background:var(--white);border:1px solid var(--line);border-radius:3px;padding:24px;}
+  .occ-card .icon{font-size:1.6rem;margin-bottom:10px;}
+  .occ-card h3{font-size:1.02rem;margin-bottom:8px;}
+  .occ-card p{font-size:.85rem;color:var(--muted);margin:0;}
+  @media(max-width:780px){.occ-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:520px){.occ-grid{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -174,7 +187,7 @@
   <div class="nav wrap">
     <div class="brand"><img src="logo.jpg" alt="5 Ratan Enterprises Food logo" class="logo-img">5 Ratan <span>Enterprises</span></div>
     <div class="nav-links">
-      <a href="#thali">Thali</a><a href="#custom">Custom Menu</a><a href="#rules">Order Rules</a><a href="#about">About Us</a><a href="#order">Order Now</a>
+      <a href="#thali">Thali</a><a href="#custom">Custom Menu</a><a href="#occasions">Festivals &amp; Functions</a><a href="#rules">Order Rules</a><a href="#about">About Us</a><a href="#order">Order Now</a>
     </div>
     <a class="cta" href="#order">Order Now</a>
   </div>
@@ -283,6 +296,21 @@
     <div class="rule"><span class="mono">PRICING</span><h3>Quotation on WhatsApp</h3><p>Location, delivery charge aur bulk discount ke hisaab se final price WhatsApp par milegi.</p></div>
     <div class="rule"><span class="mono">BULK DISCOUNT</span><h3>50 / 100 / 200 plates</h3><p>Bade orders par custom discount possible hai — quotation mein include hoga.</p></div>
     <div class="rule"><span class="mono">CATERING FOR</span><h3>Corporate &amp; Events</h3><p>Office lunch, meetings, weddings, birthdays, anniversary, ghar ke function.</p></div>
+  </div>
+</section>
+
+<section id="occasions" class="occasions">
+  <div class="wrap">
+    <div class="sec-head"><span class="num mono">04</span><h2>Festivals &amp; Functions</h2></div>
+    <p class="sec-sub">Ek hi kitchen se — chhoti family puja se lekar bade corporate order tak, har occasion cover karte hain.</p>
+    <div class="occ-grid">
+      <div class="occ-card"><div class="icon">💒</div><h3>Wedding Catering</h3><p>Shaadi, sangeet, reception — bulk thali service, live counters possible.</p></div>
+      <div class="occ-card"><div class="icon">🎂</div><h3>Birthday Party</h3><p>Snacks, sandwiches, mini meals — bacchon aur family ke liye customized.</p></div>
+      <div class="occ-card"><div class="icon">🏢</div><h3>Corporate &amp; Office Lunch</h3><p>Daily EDR meals, meetings, conferences, training programs ke liye.</p></div>
+      <div class="occ-card"><div class="icon">🪔</div><h3>Festival &amp; Puja Special</h3><p>Diwali, Navratri, Holi — prasad thali, sweets aur satvik bhog menu.</p></div>
+      <div class="occ-card"><div class="icon">💍</div><h3>Engagement &amp; Anniversary</h3><p>Special thali aur dessert-heavy menu, function ke size ke hisaab se.</p></div>
+      <div class="occ-card"><div class="icon">🏡</div><h3>House Party &amp; Kitty Party</h3><p>Ghar ke function, kitty party, get-together ke liye mini meal combos.</p></div>
+    </div>
   </div>
 </section>
 
