@@ -1,5 +1,3 @@
-
-Index · HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,11 +27,11 @@ Index · HTML
   a{color:inherit;}
   .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
   button{font-family:inherit;cursor:pointer;border:none;}
- 
+
   .thali-dot{width:14px;height:14px;border-radius:50%;flex-shrink:0;
     background:conic-gradient(var(--gold) 0deg 90deg, var(--mid-green) 90deg 200deg, var(--light-green) 200deg 300deg, var(--gold) 300deg 360deg);
     border:1.5px solid var(--white); box-shadow:0 0 0 1.5px var(--dark-green);}
- 
+
   header{position:sticky;top:0;z-index:60;background:var(--dark-green);color:var(--cream);}
   .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;}
   .brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-weight:600;font-size:1.15rem;}
@@ -43,11 +41,12 @@ Index · HTML
   .nav-links a:hover{color:var(--gold);}
   .nav a.cta{background:var(--gold);color:var(--dark-green);padding:9px 18px;border-radius:2px;font-weight:600;font-size:.85rem;}
   @media(max-width:780px){.nav-links{display:none;}}
- 
+
   .hero{background:linear-gradient(180deg,var(--dark-green),var(--mid-green));color:var(--cream);padding:60px 24px 80px;position:relative;overflow:hidden;}
-  .tcs-watermark{position:absolute;white-space:nowrap;font-family:'Fraunces',serif;font-weight:700;color:rgba(255,255,255,.06);pointer-events:none;user-select:none;z-index:0;}
-  .tcs-watermark.top{top:18px;left:-40px;font-size:4.2rem;transform:rotate(-4deg);}
-  .tcs-watermark.bottom{bottom:6px;right:-30px;font-size:3.4rem;transform:rotate(-3deg);color:rgba(255,255,255,.05);}
+  .tcs-watermark{position:absolute;white-space:nowrap;font-family:'Fraunces',serif;font-weight:700;pointer-events:none;user-select:none;z-index:0;
+    background:linear-gradient(90deg,var(--gold),var(--light-green));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;opacity:.16;}
+  .tcs-watermark.top{top:14px;left:-20px;font-size:2.4rem;transform:rotate(-4deg);}
+  .tcs-watermark.bottom{bottom:8px;right:-10px;font-size:2rem;transform:rotate(-3deg);opacity:.14;}
   .hero .hero-grid{position:relative;z-index:1;}
   .eyebrow{font-family:'IBM Plex Mono',monospace;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);display:flex;gap:10px;align-items:center;margin-bottom:16px;}
   .hero h1{color:var(--white);font-size:clamp(2.1rem,4.6vw,3.4rem);font-weight:600;line-height:1.1;max-width:760px;}
@@ -57,7 +56,7 @@ Index · HTML
   .btn{padding:13px 24px;border-radius:2px;font-weight:600;font-size:.92rem;display:inline-flex;align-items:center;gap:8px;}
   .btn-gold{background:var(--gold);color:var(--dark-green);}
   .btn-outline{border:1px solid rgba(255,255,255,.4);color:var(--white);background:transparent;}
- 
+
   section{padding:70px 24px;}
   .sec-head{display:flex;align-items:center;gap:16px;margin-bottom:10px;}
   .big-icon-badge{width:100px;height:100px;border-radius:50%;object-fit:cover;flex-shrink:0;
@@ -66,7 +65,7 @@ Index · HTML
   .sec-head h2{font-size:clamp(1.6rem,2.6vw,2.1rem);}
   .sec-head .num{font-family:'IBM Plex Mono',monospace;color:var(--gold-deep);font-size:.9rem;}
   .sec-sub{max-width:600px;color:var(--muted);margin-bottom:36px;}
- 
+
   .thali-row{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
   .thali-card{background:var(--white);border:1px solid var(--line);border-radius:3px;padding:26px;display:flex;flex-direction:column;}
   .thali-photo{width:100%;height:170px;object-fit:cover;border-radius:3px;margin-bottom:14px;display:block;}
@@ -86,7 +85,7 @@ Index · HTML
   .qty-row input{width:70px;padding:8px;border:1px solid var(--line);border-radius:2px;font-family:'IBM Plex Mono',monospace;}
   .add-btn{background:var(--dark-green);color:var(--cream);padding:10px;border-radius:2px;font-weight:600;font-size:.85rem;width:100%;}
   .add-btn.added{background:var(--light-green);}
- 
+
   .cat-tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:36px;}
   .cat-tile{background:var(--white);border:1px solid var(--line);border-radius:3px;padding:22px 14px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;font-family:inherit;}
   .cat-tile.active{border-color:var(--gold);box-shadow:0 0 0 2px var(--gold) inset;background:#FFFDF6;}
@@ -106,7 +105,7 @@ Index · HTML
   .item-row .qty{width:56px;padding:6px;border:1px solid var(--line);border-radius:2px;font-family:'IBM Plex Mono',monospace;display:none;}
   .item-row.checked .qty{display:block;}
   @media(max-width:640px){.item-grid{grid-template-columns:1fr;}}
- 
+
   .rules{background:var(--dark-green);color:var(--cream);}
   .rules .sec-head h2{color:var(--cream);}
   .rules .sec-sub{color:#B9C7B7;}
@@ -116,7 +115,7 @@ Index · HTML
   .rule h3{color:var(--cream);font-size:1.05rem;margin:8px 0;}
   .rule p{color:#B9C7B7;font-size:.87rem;margin:0;}
   @media(max-width:780px){.rule-grid{grid-template-columns:1fr;}.thali-row{grid-template-columns:1fr;}}
- 
+
   .order-panel{background:var(--white);border:1px solid var(--line);border-radius:3px;padding:28px;}
   .cart-list{list-style:none;margin:0 0 20px;padding:0;}
   .cart-list li{display:flex;justify-content:space-between;font-size:.9rem;padding:8px 0;border-bottom:1px solid var(--line);}
@@ -129,7 +128,7 @@ Index · HTML
   #validation-msg{font-size:.85rem;color:#B03A2E;margin-top:10px;display:none;}
   .submit-btn{background:var(--gold);color:var(--dark-green);padding:15px;border-radius:2px;font-weight:700;font-size:1rem;width:100%;margin-top:6px;}
   @media(max-width:640px){.field-row{grid-template-columns:1fr;}}
- 
+
   /* ===== HERO v2 ===== */
   .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;}
   .hero h1.brandtitle{color:var(--white);font-size:clamp(2.4rem,6vw,4rem);font-weight:700;line-height:1;letter-spacing:-.01em;}
@@ -150,7 +149,7 @@ Index · HTML
   .big-thali-label span{font-family:'IBM Plex Mono',monospace;font-size:.62rem;letter-spacing:.12em;color:var(--gold);margin-top:8px;}
   .seal{position:absolute;top:-8px;right:6px;width:104px;height:104px;border-radius:50%;background:var(--gold);color:var(--dark-green);display:flex;align-items:center;justify-content:center;text-align:center;font-family:'IBM Plex Mono',monospace;font-size:.6rem;font-weight:700;line-height:1.35;padding:8px;border:3px dashed var(--dark-green);transform:rotate(10deg);}
   @media(max-width:860px){.hero-grid{grid-template-columns:1fr;}.hero-visual{margin-top:20px;}}
- 
+
   /* ===== ABOUT STRIP (About Us / Why Choose / Call Now) ===== */
   .about-strip{background:var(--cream);border-top:1px solid var(--line);}
   .about-strip-grid{display:grid;grid-template-columns:1.1fr 1.2fr .9fr;gap:40px;align-items:start;}
@@ -166,7 +165,7 @@ Index · HTML
   .call-col .btn-gold{width:100%;justify-content:center;box-sizing:border-box;}
   .call-col .hours{font-size:.8rem;color:#B9C7B7;margin-top:14px;}
   @media(max-width:900px){.about-strip-grid{grid-template-columns:1fr;}}
- 
+
   /* ===== FOOTER v2 ===== */
   footer{background:var(--dark-green);color:#B9C7B7;padding-top:56px;font-size:.85rem;position:relative;overflow:hidden;}
   footer .wrap.foot-grid, footer .foot-bottom{position:relative;z-index:1;}
@@ -209,7 +208,7 @@ Index · HTML
 </style>
 </head>
 <body>
- 
+
 <header>
   <div class="nav wrap">
     <div class="brand"><img src="logo.jpg" alt="5 Ratan Enterprises Food logo" class="logo-img">5 Ratan <span>Enterprises</span></div>
@@ -219,7 +218,7 @@ Index · HTML
     <a class="cta" href="#order">Order Now</a>
   </div>
 </header>
- 
+
 <section class="hero">
   <div class="tcs-watermark top">WORKING WITH TCS</div>
   <div class="wrap hero-grid">
@@ -243,18 +242,18 @@ Index · HTML
       <div class="hero-address">📍 Shiv Ganga Colony, Ramna, Varanasi, Uttar Pradesh</div>
     </div>
     <div class="hero-visual">
-      <img src="thali-hero.jpg" alt="5 Ratan Enterprises veg thali" class="hero-photo">
+      <img src="1783434230570.png" alt="5 Ratan Enterprises veg thali" class="hero-photo">
       <img src="logo.jpg" alt="5 Ratan Enterprises Food logo" class="hero-logo-badge">
     </div>
   </div>
 </section>
- 
+
 <section id="thali">
   <div class="wrap">
     <div class="sec-head"><span class="num mono">01</span><h2>Thali System</h2></div>
     <p class="sec-sub">Teen ready-made thali options — sabka minimum order 15 plates hai.</p>
     <div class="thali-row">
- 
+
       <div class="thali-card" data-thali="Simple Thali">
         <div class="thali-photo-wrap">
           <img src="thali-simple.jpg" alt="Simple Thali" class="thali-photo">
@@ -267,10 +266,10 @@ Index · HTML
         <div class="qty-row"><input type="number" class="thali-qty" min="15" value="15"><span class="mono" style="font-size:.8rem;color:var(--muted);">plates</span></div>
         <button class="add-btn" onclick="addThali(this,'Simple Thali')">Add to Order</button>
       </div>
- 
+
       <div class="thali-card" data-thali="Super Thali">
         <div class="thali-photo-wrap">
-          <img src="thali-medium.jpg" alt="Super Thali" class="thali-photo">
+          <img src="thali-medium.png" alt="Super Thali" class="thali-photo">
           <div class="thali-photo-caption">Dal &middot; Veg &middot; Paneer Dish &middot; Rice &middot; Raita &middot; Salad &middot; 4 Chapati</div>
         </div>
         <span class="tag">Popular</span>
@@ -280,10 +279,10 @@ Index · HTML
         <div class="qty-row"><input type="number" class="thali-qty" min="15" value="15"><span class="mono" style="font-size:.8rem;color:var(--muted);">plates</span></div>
         <button class="add-btn" onclick="addThali(this,'Super Thali')">Add to Order</button>
       </div>
- 
+
       <div class="thali-card" data-thali="Deluxe Thali">
         <div class="thali-photo-wrap">
-          <img src="thali-hero.jpg" alt="Deluxe Thali" class="thali-photo">
+          <img src="deluxe-thali.jpg" alt="Deluxe Thali" class="thali-photo">
           <div class="thali-photo-caption">Dal &middot; Paneer &middot; Veg &middot; Rice &middot; Raita &middot; Sweet &middot; Salad &middot; Papad &middot; 4 Chapati</div>
         </div>
         <span class="tag">Premium</span>
@@ -293,11 +292,11 @@ Index · HTML
         <div class="qty-row"><input type="number" class="thali-qty" min="15" value="15"><span class="mono" style="font-size:.8rem;color:var(--muted);">plates</span></div>
         <button class="add-btn" onclick="addThali(this,'Deluxe Thali')">Add to Order</button>
       </div>
- 
+
     </div>
   </div>
 </section>
- 
+
 <section id="custom" style="background:#F1EEE0;">
   <div class="wrap">
     <div class="sec-head"><img src="icon-snacks.jpg" class="section-icon-img" alt="Custom Menu icon"><h2>Custom Menu Builder</h2></div>
@@ -324,14 +323,14 @@ Index · HTML
         <span class="cat-tile-note">Minimum Order: 15 Plates</span>
       </button>
     </div>
- 
+
     <div class="item-grid" id="tab-snacks"></div>
     <div class="item-grid" id="tab-parantha" style="display:none;"></div>
     <div class="item-grid" id="tab-main" style="display:none;"></div>
     <div class="item-grid" id="tab-juice" style="display:none;"></div>
   </div>
 </section>
- 
+
 <section id="rules" class="rules">
   <div class="wrap">
     <div class="sec-head"><span class="num mono">03</span><h2>Order Rules</h2></div>
@@ -346,7 +345,7 @@ Index · HTML
     <div class="rule"><span class="mono">CATERING FOR</span><h3>Corporate &amp; Events</h3><p>Office lunch, meetings, weddings, birthdays, anniversary, ghar ke function.</p></div>
   </div>
 </section>
- 
+
 <section id="occasions" class="occasions">
   <div class="wrap">
     <div class="sec-head big"><img src="icon-occasions.jpg" class="big-icon-badge" alt="Occasions icon"><h2>Festivals &amp; Functions</h2></div>
@@ -361,15 +360,15 @@ Index · HTML
     </div>
   </div>
 </section>
- 
+
 <section id="order" style="background:var(--cream);">
   <div class="wrap">
     <div class="sec-head"><span class="num mono">04</span><h2>Your Order</h2></div>
     <p class="sec-sub">Order submit karte hi ek ready quotation-request WhatsApp par khulega.</p>
- 
+
     <div class="order-panel">
       <ul class="cart-list" id="cart-list"><li class="cart-empty">Abhi tak koi item add nahi kiya &mdash; thali select karein ya custom menu se items chunein.</li></ul>
- 
+
       <div class="field"><label>Your Name</label><input type="text" id="cust-name" placeholder="e.g. Rahul Singh"></div>
       <div class="field-row">
         <div class="field"><label>Phone Number</label><input type="tel" id="cust-phone" placeholder="10-digit mobile"></div>
@@ -381,12 +380,12 @@ Index · HTML
       </div>
       <div id="delivery-note">Minimum 12 hours advance booking required. Orders after 7 PM are processed from the next business day.</div>
       <div id="validation-msg"></div>
- 
+
       <button class="submit-btn" onclick="submitOrder()">Send Order Request on WhatsApp</button>
     </div>
   </div>
 </section>
- 
+
 <section class="about-strip" id="about">
   <div class="wrap about-strip-grid">
     <div class="about-col">
@@ -413,14 +412,14 @@ Index · HTML
     </div>
   </div>
 </section>
- 
+
 <section class="feedback" id="feedback">
   <div class="wrap">
     <div class="sec-head" style="justify-content:center;text-align:center;flex-direction:column;">
       <h2>Customer Feedback</h2>
     </div>
     <p class="sec-sub" style="text-align:center;margin-left:auto;margin-right:auto;">Aapka anubhav hamare liye zaroori hai — rating aur feedback submit karein, sabko turant is site par dikhega.</p>
- 
+
     <div class="feedback-panel">
       <div class="star-rating">
         <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
@@ -434,11 +433,11 @@ Index · HTML
       <div id="feedback-msg"></div>
       <button class="submit-btn" onclick="submitFeedback()">Submit Feedback</button>
     </div>
- 
+
     <div id="feedback-list" class="feedback-list"></div>
   </div>
 </section>
- 
+
 <footer>
   <div class="tcs-watermark bottom">WORKING WITH TCS</div>
   <div class="wrap foot-grid">
@@ -482,21 +481,21 @@ Index · HTML
     5 Ratan Enterprises Food &middot; Shiv Ganga Colony, Ramna, Varanasi &middot; <span>Pure Vegetarian</span>
   </div>
 </footer>
- 
+
 <script>
 const PHONE = "917903439518";
 const SUPABASE_URL = "https://qpnujfqtygkexvkicfkw.supabase.co";
 const SUPABASE_KEY = "sb_publishable_nUR5Kh_ZWmU1kLp3RJHJUA_2HUTarGf";
- 
+
 const MENU = {
   snacks: ["Veg Sandwich","Plain Dosa","Masala Dosa","Chilly Potato","Veg Fried Rice","Chilly Paneer","Corn Pepper Salted","Samosa","Cholla Samosa","Macroni Veg","Veg Noodles","Veg Burger","Vada Sambhar","Idli Sambhar","Corn Flakes Milk","Poori Aloo Matar","Poha Vegetable","Pav Bhaji","Veg Cutlet","Cheese Toast","Potato Toast","Brown Bread Butter","Bread Butter","Bread Pakora","Cheese Cutlet","Plain Maggi","Veg Maggi"],
   parantha: ["Potato Parantha","Onion Parantha","Mix Parantha","Gobhi Parantha","Paneer Onion Parantha","Satu Parantha"],
   main: ["Paneer Butter Masala","Kadai Paneer","Shahi Paneer","Paneer Lababdar","Handi Paneer","Malai Kofta","Methi Malai Paneer","Mushroom Curry","Paneer Bhurji","Jeera Aloo","Aloo Matar","Mixed Veg","Seasonal Veg","Dal Makhani","Arhar Dal","Chhole","Rajma","Tawa Roti","Plain Paratha","Lachha Paratha","Plain Rice","Jeera Rice","Veg Biryani"],
   juice: ["Orange Juice","Mango Juice","Pineapple Juice","Watermelon Juice","Mixed Fruit Juice","Sweet Lime (Mosambi) Juice","Pomegranate Juice","Lemon Mint Juice","Sugarcane Juice","Fresh Coconut Water"]
 };
- 
+
 let cart = [];
- 
+
 function buildMenu(){
   Object.keys(MENU).forEach(cat=>{
     const container = document.getElementById('tab-'+cat);
@@ -510,7 +509,7 @@ function buildMenu(){
     }).join('');
   });
 }
- 
+
 function showTab(cat, btn){
   ['snacks','parantha','main','juice'].forEach(c=>{
     document.getElementById('tab-'+c).style.display = (c===cat)?'grid':'none';
@@ -518,7 +517,7 @@ function showTab(cat, btn){
   document.querySelectorAll('.cat-tile').forEach(b=>b.classList.remove('active'));
   btn.classList.add('active');
 }
- 
+
 function toggleItem(id, name, checkbox){
   const row = document.getElementById('row-'+id);
   if(checkbox.checked){
@@ -531,14 +530,14 @@ function toggleItem(id, name, checkbox){
   }
   renderCart();
 }
- 
+
 function updateQty(name, val){
   const q = Math.max(parseInt(val)||15, 15);
   const item = cart.find(c=>c.name===name);
   if(item) item.qty = q;
   renderCart();
 }
- 
+
 function addThali(btn, thaliName){
   const card = btn.closest('.thali-card');
   const qtyInput = card.querySelector('.thali-qty');
@@ -551,7 +550,7 @@ function addThali(btn, thaliName){
   btn.classList.add('added');
   renderCart();
 }
- 
+
 function renderCart(){
   const list = document.getElementById('cart-list');
   if(cart.length===0){
@@ -560,7 +559,7 @@ function renderCart(){
   }
   list.innerHTML = cart.map(c=>'<li><span>'+c.name+'</span><span class="mono">'+c.qty+' plates</span></li>').join('');
 }
- 
+
 function getMinDeliveryDate(){
   const now = new Date();
   let base = new Date(now);
@@ -570,11 +569,11 @@ function getMinDeliveryDate(){
   }
   return new Date(base.getTime() + 12*60*60*1000);
 }
- 
+
 function submitOrder(){
   const msg = document.getElementById('validation-msg');
   msg.style.display = 'none';
- 
+
   if(cart.length===0){
     msg.textContent = "Kripya kam se kam ek thali ya menu item select karein.";
     msg.style.display='block'; return;
@@ -584,45 +583,45 @@ function submitOrder(){
   const location = document.getElementById('cust-location').value.trim();
   const date = document.getElementById('delivery-date').value;
   const time = document.getElementById('delivery-time').value;
- 
+
   if(!name || !phone || !location || !date || !time){
     msg.textContent = "Kripya sabhi fields bharein: naam, phone, location, delivery date aur time.";
     msg.style.display='block'; return;
   }
- 
+
   const deliveryDateTime = new Date(date+'T'+time);
   const minAllowed = getMinDeliveryDate();
- 
+
   if(deliveryDateTime < minAllowed){
     msg.textContent = "Delivery kam se kam " + minAllowed.toLocaleString('en-IN',{dateStyle:'medium',timeStyle:'short'}) + " ke baad hi select karein (12-hour advance booking rule).";
     msg.style.display='block'; return;
   }
- 
+
   const itemLines = cart.map(c=>c.name + " \u2013 " + c.qty + " Plate").join('\n');
   const dateStr = deliveryDateTime.toLocaleDateString('en-IN',{day:'2-digit',month:'long'});
   const timeStr = deliveryDateTime.toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit'});
- 
+
   const text = "Customer Name: " + name + "\nPhone: " + phone + "\nItems:\n" + itemLines +
     "\nDelivery Date: " + dateStr + "\nDelivery Time: " + timeStr +
     "\nLocation: " + location + "\nPlease Send Final Quotation";
- 
+
   const url = "https://wa.me/" + PHONE + "?text=" + encodeURIComponent(text);
   window.open(url, '_blank');
 }
- 
+
 async function submitFeedback(){
   const box = document.getElementById('feedback-msg');
   const name = document.getElementById('fb-name').value.trim();
   const message = document.getElementById('fb-message').value.trim();
   const rating = document.querySelector('input[name="rating"]:checked').value;
- 
+
   if(!name || !message){
     box.style.color = '#B03A2E';
     box.textContent = "Kripya apna naam aur feedback likhein.";
     box.style.display = 'block';
     return;
   }
- 
+
   try{
     const res = await fetch(SUPABASE_URL + "/rest/v1/feedback", {
       method: "POST",
@@ -634,9 +633,9 @@ async function submitFeedback(){
       },
       body: JSON.stringify({ name: name, rating: parseInt(rating), message: message })
     });
- 
+
     if(!res.ok){ throw new Error("Save failed"); }
- 
+
     box.style.color = 'var(--mid-green)';
     box.textContent = "Dhanyavaad! Aapka feedback save ho gaya.";
     box.style.display = 'block';
@@ -649,7 +648,7 @@ async function submitFeedback(){
     box.style.display = 'block';
   }
 }
- 
+
 async function loadFeedback(){
   const list = document.getElementById('feedback-list');
   list.innerHTML = '<div class="fb-loading">Loading feedback...</div>';
@@ -676,11 +675,10 @@ async function loadFeedback(){
     list.innerHTML = '<div class="fb-loading">Feedback load nahi ho paya, page refresh karke dekhein.</div>';
   }
 }
- 
+
 buildMenu();
 loadFeedback();
 </script>
- 
+
 </body>
 </html>
- 
